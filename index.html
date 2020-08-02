@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>T&P|DTU</title>
+	<meta name="description" content="TNP DTU 2019" />
+	<meta name="keywords" content="tnp, cell, dtu" />
+	<meta name="author" content="Sajal Gupta" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!--
+	Default Theme Style
+	You can change the style.css (default color purple) to one of these styles
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<!-- End demo purposes only -->
+
+
+	<style>
+	/* For demo purpose only */
+
+	/*
+	GREEN
+	8dc63f
+	RED
+	FA5555
+	TURQUOISE
+	27E1CE
+	BLUE
+	2772DB
+	ORANGE
+	FF7844
+	YELLOW
+	FCDA05
+	PINK
+	F64662
+	PURPLE
+	7045FF
+
+	*/
+
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	/* width */
+	::-webkit-scrollbar {
+			width: 5px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+			background: rgba(241,241,241,1);
+		}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+			background: #888;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+			background: #555;
+	}
+
+/*nav-bar styling*/
+
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+		z-index: 1000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(21,51,10,0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.topnav-right {
+  float: right;
+}
+
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 140px;
+		position: fixed;
+		left: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-left: -140px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#colour-variations ul {
+		margin-bottom: 20px;
+		float: left;
+	}
+	#colour-variations li {
+		list-style: none;
+		display: inline;
+	}
+	#colour-variations li a {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		float: left;
+		margin: 5px;
+	}
+
+
+
+	#colour-variations li a[data-theme="style"] {
+		background: #8dc63f;
+	}
+	#colour-variations li a[data-theme="red"] {
+		background: #FA5555;
+	}
+	#colour-variations li a[data-theme="turquoise"] {
+		background: #27E1CE;
+	}
+	#colour-variations li a[data-theme="blue"] {
+		background: #2772DB;
+	}
+	#colour-variations li a[data-theme="orange"] {
+		background: #FF7844;
+	}
+	#colour-variations li a[data-theme="yellow"] {
+		background: #FCDA05;
+	}
+	#colour-variations li a[data-theme="pink"] {
+		background: #F64662;
+	}
+	#colour-variations li a[data-theme="purple"] {
+		background: #7045FF;
+	}
+
+	#colour-variations a[data-layout="boxed"],
+	#colour-variations a[data-layout="wide"] {*
+		padding: 2px 0;
+		width: 48%;
+		border: 1px solid #ededed;
+		text-align: center;
+		color: #777;
+		display: block;
+	}
+	#colour-variations a[data-layout="boxed"]:hover,
+	#colour-variations a[data-layout="wide"]:hover {
+		border: 1px solid #777;
+	}
+	#colour-variations a[data-layout="boxed"] {
+		float: left;
+	}
+	#colour-variations a[data-layout="wide"] {
+		float: right;
+	}
+	#text{
+		margin-left: 25px;
+		margin-top: 10px;
+
+	}
+
+
+	.option-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-right: -30px;
+		width: 30px;
+		height: 30px;
+		background: #8dc63f;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		top: 2px;
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+
+	body {font-family: Arial, Helvetica, sans-serif;}
+
+	/* Full-width input fields */
+	input[type=text], input[type=password] {
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	}
+
+	/* Set a style for all buttons */
+	button {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  cursor: pointer;
+	  width: 100%;
+	}
+
+	button:hover {
+	  opacity: 0.8;
+	}
+
+	/* Extra styles for the cancel button */
+	.cancelbtn {
+	  width: auto;
+	  padding: 10px 18px;
+	  background-color: #f44336;
+	}
+
+	/* Center the image and position the close button */
+	.imgcontainer {
+	  text-align: center;
+	  margin: 24px 0 12px 0;
+	  position: relative;
+	}
+
+	img.avatar {
+	  width: 10%;
+	  border-radius: 10%;
+	}
+
+	.container {
+	  padding: 16px;
+	}
+
+	span.psw {
+	  float: right;
+	  padding-top: 16px;
+	}
+
+	/* The Modal (background) */
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	  padding-top: 60px;
+	}
+
+	/* Modal Content/Box */
+	.modal-content {
+	  background-color: #fefefe;
+	  margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	  border: 1px solid #888;
+	  width: 87%; /* Could be more or less, depending on screen size */
+	}
+
+	/* The Close Button (x) */
+	.close {
+	  position: absolute;
+	  right: 25px;
+	  top: 0;
+	  color: #000;
+	  font-size: 35px;
+	  font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+	  color: red;
+	  cursor: pointer;
+	}
+
+	/* Add Zoom Animation */
+	.animate {
+	  -webkit-animation: animatezoom 0.6s;
+	  animation: animatezoom 0.6s
+	}
+
+	@-webkit-keyframes animatezoom {
+	  from {-webkit-transform: scale(0)}
+	  to {-webkit-transform: scale(1)}
+	}
+
+	@keyframes animatezoom {
+	  from {transform: scale(0)}
+	  to {transform: scale(1)}
+	}
+
+	/* Change styles for span and cancel button on extra small screens */
+	@media screen and (max-width: 300px) {
+	  span.psw {
+	     display: block;
+	     float: none;
+	  }
+	  .cancelbtn {
+	     width: 100%;
+	  }
+	}
+
+	#si{
+		text-align: center;
+	}
+
+/* Dropdown in nav-bar */
+
+
+
+	.dropdown {
+	  float: left;
+	  overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+	  font-size: 16px;
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 14px 16px;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+	  background-color:red;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: fixed;
+	  background-color: rgba(21,51,10,0.7);
+	  min-width: 169.5px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 100px;
+	}
+
+	.dropdown-content a {
+	  float: none;
+	  color: white;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	  background-color: green;
+	}
+
+	.dropdown:hover .dropdown-content {
+	  display:block;
+	}
+
+	.dropdown-content2 {
+	  display: none;
+	  position: fixed;
+	  background-color: rgba(21,51,10,0.7);
+	  min-width: 117.5px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 100px;
+	}
+
+	.dropdown-content2 a {
+		float: none;
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content2 a:hover {
+		background-color: green;
+	}
+
+	.dropdown:hover .dropdown-content2 {
+		display:block;
+	}
+
+	.dropdown-content3 {
+		display: none;
+		position: fixed;
+		background-color: rgba(21,51,10,0.7);
+		min-width: 156.5px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 100px;
+	}
+
+	.dropdown-content3 a {
+		float: none;
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content3 a:hover {
+		background-color: green;
+	}
+
+	.dropdown:hover .dropdown-content3 {
+		display:block;
+	}
+
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+
+
+	<!--
+		INFO:
+		Add 'boxed' class to body element to make the layout as boxed style.
+		Example:
+		<body class="boxed">
+	-->
+	<body>
+
+	<!-- Loader -->
+
+
+<!-- navbar content -->
+<ul>
+  <li><a class="active" href="#fh5co-projects"><b>Home</b></a></li>
+  <li><a href="#fh5co-features"><b>About Us</b></a></li>
+<li>	<div class="navbar">
+<div class="dropdown">
+	<button class="dropbtn"><b>Placement Stats</b>
+		<i class="fa fa-caret-down"></i>
+	</button>
+	<div class="dropdown-content">
+		<a href="http://tnp.dtu.ac.in/pstats/course-2015-16.pdf"><b>2015-2016</b></a>
+		<a href="http://tnp.dtu.ac.in/pstats/course-2016-17.pdf"><b>2016-2017</b></a>
+		<a href="http://tnp.dtu.ac.in/pstats/course-2017-18.pdf"><b>2017-2018</b></a></li>
+	</div>
+</div>
+</div>
+  <li>	<div class="navbar">
+	<div class="dropdown">
+		<button class="dropbtn"><b>Brochure</b>
+			<i class="fa fa-caret-down"></i>
+		</button>
+
+			<div class="dropdown-content2">
+			<a href="http://tnp.dtu.ac.in/Brochure/Placement_Brochure_2018-19.pdf"><b>B.Tech</b></a>
+			<a href="http://tnp.dtu.ac.in/downloads/dsm.pdf"><b>MBA</b></a>
+		</div>
+	</div>
+	</div></li>
+
+	<li>	<div class="navbar">
+	<div class="dropdown">
+		<button class="dropbtn"><b>Training Letter</b>
+			<i class="fa fa-caret-down"></i>
+		</button>
+			<div class="dropdown-content3">
+			<a href="http://tnp.dtu.ac.in/downloads/Training_Letter_I_II_Year.pdf"><b>1st & 2nd year</b></a>
+			<a href="http://tnp.dtu.ac.in/downloads/Training_Letter_III_Year.pdf"><b>3rd year & MBA</b></a>
+				<a href="http://tnp.dtu.ac.in/downloads/Training_Letter_BTECH_EVENING.pdf"><b>B.Tech Evening</b></a>
+		</div>
+	</div>
+	</div></li>
+
+	  <li><a href="#fh5co-features-2"><b>FAQ</b></a></li>
+	  <li><a href="#contact us"><b>Contact Us</b></a></li>
+		<div class="topnav-right">
+    <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Student Login </b></button></li>
+    <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>| &nbsp &nbsp &nbsp Company Login</b></button></li>
+  </div>
+
+
+</ul>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+<img src="images/student.jpg" alt="Avatar" class="avatar">
+    </div>
+<a id="si"><b><h2><u>Sign in</u></h2></b></a>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <a href="www.facebook.com"><button type="submit">Login</button></a>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+		<section id="fh5co-projects">
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<div id="sif">
+						<h2 class="fh5co-lead animate-box"><p style="background-color: #4da6ff"><a style="color: white"><b>Training & Placement</b></a></p></h2>
+						<p class="fh5co-sub-lead animate-box"><h3><b>(Delhi Technological University)</b></h3> </p>
+					</div>
+				</div>
+			</div>
+
+			
+				<div class="row">
+
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<a href="images/e.jpg" class="fh5co-project-item image-popup">
+							<img src="images/e.jpg" alt="Image" class="img-responsive">
+
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<a href="images/f.jpg" class="fh5co-project-item image-popup">
+							<img src="images/f.jpg" alt="Image" class="img-responsive">
+
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<a href="images/h.jpg" class="fh5co-project-item image-popup">
+							<img src="images/h.jpg" alt="Image" class="img-responsive">
+
+						</a>
+					</div>
+
+
+
+				</div>
+			</div>
+
+		</section>
+		<!-- END #fh5co-projects -->
+
+	<!-- END #fh5co-page -->
+
+	<!-- For demo purposes Only ( You may delete this anytime :-) -->
+
+	<!-- End demo purposes only -->
+
+	<section id="fh5co-features" style="padding-bottom: 3px;">
+			<div class="container">
+				<div class="row text-center row-bottom-padded-md">
+					<div class="col-md-8 col-md-offset-2" style="margin-left: auto;width:inherit;">
+					<h2 class="fh5co-lead animate-box fadeInUp animated" style="margin-left: 40px;">About Us</h2>
+					<div id="text">
+						<p><b>The Training & Placement Cell is the department run by the academics head of DTU that aims at manifesting the talent & spirit of the young students from all corners of DTU. Keeping this motto in mind the TNP,DTU is reaching out to all the students across DTU to promote and provide them with the right opportunity by providing them with such a large pool of company from which they can select thier dream Company.
+
+	<br>	A student would be selected by companies based on his/her "Resume", Talent and by their ability to solve problems and by looking at their skills and dedication to work for their organization.
+		<br>Training and Placement Cell is always ready to help all the students across DTU and try to get them all a good offer so that they can work for their happiness as well as can maintain the aroma of success of DTU in all the corners of world.
+		</b></p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+	<section id="fh5co-projects">
+		<section id="inc">
+		<div class="container">
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<h2 class="fh5co-lead animate-box">Incentives</h2>
+					<p class="fh5co-sub-lead animate-box">Reasons to become Placement Coordinator</p>
+				</div>
+			</div>
+			<div class="row">
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<a href="images/c1.png" class="fh5co-project-item image-popup">
+						<img src="images/c1.png" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+							<h2>Get Certified</h2>
+							<p>Get a certificate of appreciation from The TNP, DTU on successfully completing the tenure. </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<a href="images/c2.jpg" class="fh5co-project-item image-popup">
+						<img src="images/c2.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+							<h2>Organise Placements</h2>
+							<p>25 Get a chance of managing and help conduct placement in DTU.</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<a href="images/c3.jpg" class="fh5co-project-item image-popup">
+						<img src="images/c3.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+							<h2>Get Updated</h2>
+							<p>Be updated on the recent trends and requirements of Firms, and about recent trends which companies follow.</p>
+						</div>
+					</a>
+				</div>
+
+
+				<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<a href="images/c4.jpg" class="fh5co-project-item image-popup">
+						<img src="images/c4.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+							<h2>Skill Development</h2>
+							<p>Improve your communication and management skills by being a part of the largest company network in the nation.</p>
+						</div>
+					</a>
+				</div>
+
+
+				<section id="fh5co-projects">
+					<div class="container">
+						<div class="row row-bottom-padded-md">
+							<div class="col-md-6 col-md-offset-3 text-center">
+								<h2 class="fh5co-lead animate-box">Responsibilities</h2>
+								<p class="fh5co-sub-lead animate-box">Responsibilities of a Placement Coordinator</p>
+							</div>
+						</div>
+						<div class="row">
+
+								<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+								<a href="images/p6.png" class="fh5co-project-item image-popup">
+									<img src="images/p6.png" alt="Image" class="img-responsive">
+									<div class="fh5co-text">
+										<h2>Publicize</h2>
+										<p>Putting up posters on the notice boards of your college about recent companies visiting the campus for placement. </p>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+								<a href="images/p5.png" class="fh5co-project-item image-popup">
+									<img src="images/p5.png" alt="Image" class="img-responsive">
+									<div class="fh5co-text">
+										<h2>Communicate</h2>
+										<p>Forwarding the mails to college mailing list and communicate with HR's of various Companies.</p>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+								<a href="images/p3.png" class="fh5co-project-item image-popup">
+									<img src="images/p3.png" alt="Image" class="img-responsive">
+									<div class="fh5co-text">
+										<h2>Promote</h2>
+										<p>Ensure participation of all students so as organizations gets the best out of all students.</p>
+									</div>
+								</a>
+							</div>
+
+
+
+			</div>
+		</div>
+	</section>
+	<!-- END #fh5co-projects -->
+
+	<section id="fh5co-features-2">
+		<div class="container">
+			<div class="col-md-6 col-md-push-6">
+				<figure class="fh5co-feature-image animate-box">
+
+				</figure>
+			</div>
+			<div class="col-md-6 col-md-pull-6">
+				<h2 class="fh5co-lead animate-box">Frequently Asked Questions</h2>
+				<div class="fh5co-feature">
+					<div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+					<div class="fh5co-text animate-box">
+						<h3><b>Q. Why should I recruit from DTU?</b><br><br>
+
+Every year, more than 1600 talented students pass out of DTU. They enter various fields and excel in every role they take up.  Your organization is guaranteed to find students fit for the roles you offer, be it MBA students, interns or Engineers.</h3>
+					</div>
+				</div>
+				<div class="fh5co-feature">
+					<div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+					<div class="fh5co-text animate-box">
+						<h3><b>Q. What sort of companies visit DTU?</b><br><br>
+
+Companies of all domains visit DTU. Whether it is consulting firms, PSU’s, Electronics companies or companies in the core engineering fields and startup.</h3>
+					</div>
+				</div>
+				<div class="fh5co-feature">
+					<div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+					<div class="fh5co-text animate-box">
+						<h3><b>Q. I want to visit DTU for recruitment, how should I go about it?</b><br><br>
+
+All you have to do is get in touch with one of our Placements Coordinators by sending in an email describing your company, role being offered and compensation to students. They will get in touch with you and tell you all about the further process. You also mail at Placements@dtu.ac.in.</h3>
+					</div>
+				</div>
+</section>
+
+
+
+		<section id="fh5co-features-2">
+			<section id ="contact us"
+			<div class="container">
+				<div class="col-md-6 col-md-push-6">
+					<figure class="fh5co-feature-image animate-box">
+						<img src="images/contact2.jpg" alt="Free HTML5 Bootstrap Template by FREEHTML5.co">
+					</figure>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					<h2 class="fh5co-lead animate-box"></h2>
+					<div class="fh5co-feature">
+						<div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+						<div class="fh5co-text animate-box">
+							<h2>Contact Us</h2>
+							<p>
+								<a href="mailto:tnpdtu@gmail.com"><b>tnpdtu@gmail.com</a> <br>
+								Delhi Technological University, <br>
+								(DCE) New Delhi 110042 <br>
+								<a href="tel:+919958944788">+91 9925658524</b></a>
+							</p>
+						</div>
+					</div>
+<footer>
+	<div class="col-md-12">
+		<p class="fh5co-left"><small><b>&copy; 2019 TNP DTU. <br>All Rights Reserved.</b></small></p>
+		<p class="fh5co-right"><small class="fh5co-right"><b>Designed by &nbsp:</b> <a href="https://www.facebook.com/sajal.gupta.7771"><b>Sajal Gupta</b></a> </small></p>
+	</div></footer>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	<!--
+	INFO:
+	jQuery Cookie for Demo Purposes Only.
+	The code below is to toggle the layout to boxed or wide
+	-->
+	<script src="js/jquery.cookie.js"></script>
+	
+
+
+	</script>
+
+
+	</body>
+</html>
